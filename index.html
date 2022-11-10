@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipr | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-4xl text-center">Gif's</h1>
+    <div class="flex justify-center">
+        <a href="favorieten.html" class="underline hidden md:block">Zie hier je favorieten!</a>
+    </div>
+    <div class="w-screen flex justify-center">
+        <div class="lg:hidden w-4/5 shadow-md rounded-3xl flex justify-around items-center h-16 md:h-24 absolute bottom-8" id="mobile_nav">
+            <img src="icons/home.svg" class="w-10 md:w-16" alt="home icon">
+            <a href='favorieten.html'><img src="icons/heart.svg" class="w-10 md:w-16" alt="heart icon"></a>
+        </div>
+        <div class="mt-12 w-100">
+            <img id="giphyImage" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" class="border-2 border-red-400 w-96 aspect-video" alt="Gif">
+            <p id="gifDescription" class="mt-8"></p>
+            <div class="flex justify-around mt-12">
+            <button id="likeButton"><img src="icons/like_heart.svg" alt="like icon" class="w-12"></button>
+                <button id="dislikeButton"><img src="icons/dislike.png" alt="dislike icon" class="w-14"></button>
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
